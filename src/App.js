@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Lista from "./components/Lista";
+import Formulario from "./components/Formulario";
+
+
+
+export default function App(){
+
+    return (
+        <div className="container mt-4">
+            <h1>TITLE DE LA APP</h1>
+            <p>Soy el parrafo de este componente</p>
+            <div className="row">
+                <div className="col-6">
+                    <Lista></Lista>
+                </div>
+                <div className="col-6">
+                    <Formulario></Formulario>
+                </div>
+            </div>
+
+        </div>
+    );
+
 }
 
-export default App;
+
+
